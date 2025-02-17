@@ -4,7 +4,6 @@ import random
 from wakeonlan import send_magic_packet
 from RC import RC_DICT
 
-print(RC_DICT.ZERO.value)
 
 
 class LOEWE_API:  
