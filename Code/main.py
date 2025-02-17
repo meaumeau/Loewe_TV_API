@@ -118,7 +118,7 @@ class LOEWE_API:
             
             
             def Wake_up(self):             #The TV goes in deep sleep after power down WOL has to beused to get it in a network state so we can feed it commands
-                  send_magic_packet('F8:35:DD:1F:58:AA')
+                  send_magic_packet('F8:35:DD:**:**:**')
                   
             
             
@@ -180,17 +180,3 @@ class LOEWE_API:
                                 """
                   self.API_CALL(CMD, BODY_DATA) 
                       
-                             
-
-
-
-        
-        
-    
-c= LOEWE_API("192.168.10.37", "40-5B-D8-87-53-6a", "homeassistant")
-# print(c.fcid, c.clientid) 
-c.RequestAcces()
-#c.SET_VOLUME()
-# print(c.fcid, c.clientid)
-#c.RC(RC_DICT.TV_OFF.value)
-c.GET_CURRENT_PLAYBACK()
